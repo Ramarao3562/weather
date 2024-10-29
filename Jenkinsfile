@@ -17,7 +17,7 @@ pipeline {
             steps {
                 script {
                     // Install project dependencies
-                    sh 'npm install'
+                    bat 'npm install'
                 }
             }
         }
@@ -26,7 +26,7 @@ pipeline {
             steps {
                 script {
                     // Run the build command for production
-                    sh 'npm run build'
+                    bat 'npm run build'
                 }
             }
         }
@@ -36,7 +36,7 @@ pipeline {
                 script {
                     // Deploy to a specific server, directory, or S3 bucket
                     // Example: Copying build files to a deployment directory
-                    sh 'cp -r build/* /path/to/your/deployment/directory'
+                    bat 'cp -r build/* /path/to/your/deployment/directory'
                 }
             }
         }
