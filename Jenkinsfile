@@ -36,7 +36,7 @@ pipeline {
                 script {
                     // Deploy to a specific server, directory, or S3 bucket
                     // Example: Copying build files to a deployment directory
-                    bat 'xcopy build\\* "C:\\path\\to\\your\\deployment\\directory" /E /I'
+                    bat 'xcopy build\\* "C:\\path\\to\\your\\deployment\\directory" /E /I /Y'
                 }
             }
         }
