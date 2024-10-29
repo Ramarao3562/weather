@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git url: 'https://github.com/Ramarao3562/weather-app.git', branch: 'main'
+                git url: 'https://<Ramarao3562>:<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>@github.com/Ramarao3562/weather.git', branch: 'main'
             }
         }
         
